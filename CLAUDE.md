@@ -30,3 +30,13 @@ for that run; without such an instruction, `CODING_RULES.md` stays binding in fu
 Do not inline rules back into this file and do not use `@import` for either file —
 they are intentionally referenced, not imported.
 
+
+## Post-Implementation Code Analysis
+
+After changing this contract, run the changed-files analyzer and fix every reported issue before considering the work complete:
+
+```powershell
+cmd /c ".\tools\analyze_changed_and_new_files.bat"
+```
+
+The analyzer checks changed and new contract JSON files and fails on warnings or errors. Its reports are written under `code_analysis_results/`.
