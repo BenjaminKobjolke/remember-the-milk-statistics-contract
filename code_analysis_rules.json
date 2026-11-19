@@ -1,0 +1,6 @@
+{
+  "fail_on": "warning",
+  "contract_enums": {
+    "enabled": true
+  }
+}
