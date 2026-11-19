@@ -1,0 +1,13 @@
+{
+  "snapshots": {
+    "columns": {
+      "completed_count": "INTEGER",
+      "id": "INTEGER",
+      "list_name": "TEXT",
+      "open_count": "INTEGER",
+      "taken_at": "TEXT"
+    },
+    "direction": "api_to_client",
+    "description": "SQLite table written by remember-the-milk-statistics. taken_at is an ISO 8601 UTC string from Python datetime.isoformat()."
+  }
+}
